@@ -3,6 +3,7 @@ import PyPDF2
 import random
 import itertools
 import streamlit as st
+from gtts import gTTS
 from io import StringIO
 from langchain.vectorstores import FAISS
 from langchain.chains import RetrievalQA
@@ -100,6 +101,12 @@ def generate_eval(text, N, chunk):
 
 
 # ...
+def convert_text_to_speech(text):
+    if text:
+        tts = gTTS(text)
+        tts.save("output.mp3")
+        os.system("start output.mp3")
+
 
 def main():
     
@@ -283,6 +290,10 @@ def main():
         if user_question:
             answer = qa.run(user_question)
             st.write("Answer:", answer)
+            if st.button("Convert to Speech"):
+                convert_text_to_speech(answer)
+                st.success("Speech generated successfully! Click the link below to listen.")
+                st.audio("output.mp3")
 
 
 if __name__ == "__main__":
