@@ -183,7 +183,7 @@ def main():
 
     st.write(
     f"""
-    <div style="display: flex; align-items: center; margin-left: 0;">
+    <div>
         <h1 style="display: inline-block;">ChatPdf</h1></br>
         <p>An Intelligent approach to PDF</p>
     </div>
