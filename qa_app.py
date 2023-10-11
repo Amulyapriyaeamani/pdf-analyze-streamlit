@@ -184,7 +184,7 @@ def main():
     st.write(
     f"""
     <div>
-        <h1 style="display: inline-block;">ChatPdf</h1></br>
+        <h1 style="display: inline-block;">ChatPdf</h1>
         <p>An Intelligent approach to PDF</p>
     </div>
     """,
