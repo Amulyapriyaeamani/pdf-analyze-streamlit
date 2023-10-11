@@ -17,7 +17,7 @@ from langchain.callbacks.base import CallbackManager
 from langchain.embeddings import HuggingFaceEmbeddings
 
 
-st.set_page_config(page_title="PDF Analyzer",page_icon=':page_facing_up:')
+st.set_page_config(page_title="PdfBot",page_icon=':page_facing_up:')
 
 @st.cache_data
 def load_docs(files):
@@ -120,7 +120,7 @@ def main():
         padding: 0px 0px;
         text-align: center;
     ">
-        <p>Made by <a href='https://x.com/amulyaeamani'>The Tech Wizzes</a></p>
+        <p>Made by <a href='https://x.com/amulyaeamani'>The Tech Whizzes</a></p>
     </div>
     """
 
