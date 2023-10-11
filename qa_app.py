@@ -17,7 +17,7 @@ from langchain.callbacks.base import CallbackManager
 from langchain.embeddings import HuggingFaceEmbeddings
 
 
-st.set_page_config(page_title="PdfBot",page_icon=':page_facing_up:')
+st.set_page_config(page_title="ChatPdf",page_icon=':page_facing_up:')
 
 @st.cache_data
 def load_docs(files):
@@ -184,7 +184,7 @@ def main():
     st.write(
     f"""
     <div style="display: flex; align-items: center; margin-left: 0;">
-        <h1 style="display: inline-block;">PdfBot</h1>
+        <h1 style="display: inline-block;">ChatPdf</h1></br>
         <p>An Intelligent approach to PDF</p>
     </div>
     """,
