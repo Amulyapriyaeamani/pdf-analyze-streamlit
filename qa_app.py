@@ -185,7 +185,7 @@ def main():
     f"""
     <div>
         <h1 style="display: inline-block;">ChatPdf</h1>
-        <p>An Intelligent approach to PDF</p>
+        <p style="font-weight: 600;">An Intelligent approach to PDF</p>
     </div>
     """,
     unsafe_allow_html=True,
