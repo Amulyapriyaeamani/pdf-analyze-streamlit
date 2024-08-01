@@ -41,4 +41,3 @@ streamlit run qa_app.py
 
 After running the command, you can access the app through your web browser using the provided URL.
 
-Developed by [Mehmet Balioglu](https://twitter.com/mehmet_ba7)
